@@ -14,30 +14,29 @@
 ## Usage
 
 ```js
-import trimHtmlTag from 'trim-html-tag';
+import trimTag from 'trim-html-tag';
 
-trimHtmlTag('unicorns'); // unicorns
+trimTag('h1', '<h1> Title </h1>\n\n'); // Title
+trimTag('p', '<p> Paragraph </p>\n');  // Paragraph
 ```
 
 ## API
 
-### trimHtmlTag(input, [options])
+### trimTag(tag, input)
+
+#### tag
+
+*Required*  
+Type: `String`
+
+Tag, which you want trim from html string (e.g. `h1`, `b`).
 
 #### input
 
 *Required*  
 Type: `String`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `Boolean`  
-Default: `false`
-
-Lorem ipsum.
+HTML string, from which you want to trim the tag (e.g. `<p>inside</p>` or `<h1>also inside</h1>`).
 
 ## License
 
