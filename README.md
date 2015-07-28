@@ -16,20 +16,14 @@
 ```js
 import trimTag from 'trim-html-tag';
 
-trimTag('h1', '<h1> Title </h1>\n\n'); // Title
-trimTag('p', '<p> Paragraph </p>\n');  // Paragraph
+trimTag('<p> trimP </p>\n');    // trimP
+trimTag('<h1> trimH1 </h1>\n'); // trimH1
+trimTag('<h1 class="asd"> trimH1 </h1>\n'); // trimH1
 ```
 
 ## API
 
-### trimTag(tag, input)
-
-#### tag
-
-*Required*  
-Type: `String`
-
-Tag, which you want trim from html string (e.g. `h1`, `b`).
+### trimTag(input)
 
 #### input
 

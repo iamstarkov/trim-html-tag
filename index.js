@@ -1,8 +1,4 @@
-import { compose, trim, join, split, nthArg, filterIndexed } from 'ramda';
+const trim = input => input.trim();
+const reg = /<[\S]{1,}[^>]*>([^<]*)<\/[\S]{1,}>/gim;
 
-const isInRange = (start, end) =>
-  (item, i, arr) => i > start && i < arr.length - 1 - end;
-const trimTag = tag => filterIndexed(isInRange(tag.length + 1, tag.length + 2));
-const _trim = tag => compose(trim, join(''), trimTag(tag), split(''), trim);
-
-export default (tag, input = '') => _trim(tag)(input);
+export default (input = '') => trim(new RegExp(reg).exec(trim(input))[1]);
