@@ -12,3 +12,7 @@ it('should trim h1 tag', () => {
 it('should trim anything tag', () => {
   equal(trimTag('<h1 class="asd"> trimH1 </h1>\n'), 'trimH1');
 });
+
+it('should trim anything tag', () => {
+  equal(trimTag('<p>stringified <em>stay here</em></p>\n'), 'stringified <em>stay here</em>');
+});
