@@ -30,7 +30,7 @@ trimTag('<h1 class="asd"> trimH1 </h1>\n'); // trimH1
 *Required*  
 Type: `String`
 
-HTML string, from which you want to trim the tag (e.g. `<p>inside</p>` or `<h1>also inside</h1>`).
+One stringified HTML node, from which you want to trim the tag (e.g. `<p>inside</p>` or `<h1>also inside</h1>`).
 
 ## License
 
