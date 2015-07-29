@@ -13,6 +13,14 @@ it('should trim anything tag', () => {
   equal(trimTag('<h1 class="asd"> trimH1 </h1>\n'), 'trimH1');
 });
 
-it('should trim anything tag', () => {
+it('should trim only one tag', () => {
   equal(trimTag('<p>stringified <em>stay here</em></p>\n'), 'stringified <em>stay here</em>');
+});
+
+it('should trim only one tag 2', () => {
+  equal(trimTag('<p>stringified <em>stay here</em> <b>asd</b></p>\n'), 'stringified <em>stay here</em> <b>asd</b>');
+});
+
+it('should trim only one tag 3', () => {
+  equal(trimTag('<p>stringified <em>stay <b>asd</b> here</em></p>\n'), 'stringified <em>stay <b>asd</b> here</em>');
 });
