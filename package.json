@@ -34,5 +34,8 @@
     "coveralls": "*",
     "isparta": "*",
     "mocha": "*"
+  },
+  "dependencies": {
+    "ramda": "^0.17.1"
   }
 }
