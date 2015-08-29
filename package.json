@@ -1,6 +1,6 @@
 {
   "name": "trim-html-tag",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "trim html tag from input",
   "main": "index.es5.js",
   "scripts": {
