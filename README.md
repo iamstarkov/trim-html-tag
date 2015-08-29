@@ -20,6 +20,9 @@ trimTag('<p> trimP </p>\n');    // trimP
 trimTag('<h1> trimH1 </h1>\n'); // trimH1
 trimTag('<h1 class="asd"> trimH1 </h1>\n'); // trimH1
 trimTag('<p>stringified <em>stay here</em></h1>\n'); // stringified <em>stay here</em>
+
+trimTag();       // undefined ¯\_(ツ)_/¯
+trimTag('some'); // some
 ```
 
 ## API
