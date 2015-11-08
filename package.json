@@ -30,7 +30,7 @@
   "homepage": "https://github.com/iamstarkov/trim-html-tag#readme",
   "devDependencies": {
     "assert": "*",
-    "babel-cli": "^6.1.1",
+    "babel-cli": "6.1.1",
     "babel-core": "^6.0.20",
     "babel-preset-es2015": "^6.0.15",
     "coveralls": "*",
